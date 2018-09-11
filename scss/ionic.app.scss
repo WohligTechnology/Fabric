@@ -1,23 +1,91 @@
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
+// To customize the look and feel of Ionic, you can override the variables
+// in ionic's _variables.scss file.
 
-For example, you might change some of the default colors:
+// For example, you might change some of the default colors:
 
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
+$light: #fff !default;
+$app-color: #22386C !default;
+$app-color1: #E42229 !default;
+$calm: #11c1f3 !default;
+$balanced: #33cd5f !default;
+$energized: #ffc900 !default;
+$assertive: #ef473a !default;
+$royal: #886aea !default;
+$dark: #444 !default;
+
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-
+$lato-font-path: "../lib/fonts/Lato" !default;
+$lato: "lato" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+@font-face {
+  font-family: $lato;
+  src:url("#{$lato-font-path}/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $lato;
+  src:url("#{$lato-font-path}/Lato-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: $lato;
+  src:url("#{$lato-font-path}/Lato-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: $lato;
+  src:url("#{$lato-font-path}/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+//regular
+.lato-regular {
+  font-family: $lato;
+  font-weight: 400;
+}
+
+// medium
+.lato-medium {
+  font-family: $lato;
+  font-weight: 500;
+}
+
+// semibold
+.lato-semibold {
+  font-family: $lato;
+  font-weight: 600;
+}
+
+//bold
+.lato-bold {
+  font-family: $lato;
+  font-weight: 700;
+}
+
+
+.app-color {
+  color: $app-color;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+input,
+span,
+label {
+  font-size: 16px;
+}
+
+@import "login-signup";

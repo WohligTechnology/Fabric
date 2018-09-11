@@ -1,0 +1,134 @@
+//login-signup
+.app-logo {
+  width: 40%;
+  margin: 20% auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.login-form {
+  padding: 0px 25px;
+
+  span {
+    margin: 10px 0px 3px;
+    color: $app-color;
+    width: 100%;
+    max-width: none;
+  }
+
+  input {
+    border: 1px solid $app-color;
+    padding-left: 15px;
+    color: $app-color;
+    @extend .lato-regular;
+  }
+
+  input::placeholder {
+    color: $app-color;
+    @extend .lato-regular; // color: black;
+  }
+}
+
+.forgot-pass-username {
+  font-size: 14px !important;
+  @extend .lato-regular;
+}
+
+.dont-acc {
+  text-align: center;
+  margin-top: 10%;
+
+  label {
+    color: $app-color;
+    @extend .lato-regular;
+  }
+
+  span {
+    @extend .lato-bold;
+    color: $app-color1;
+  }
+}
+
+
+//otp
+.otp-msg {
+  padding: 15px 48px;
+  font-size: 16px;
+  color: $app-color;
+  @extend .lato-regular;
+}
+
+.otp-input {
+  border: 1px solid #E42229 !important;
+  border-radius: 15px;
+  text-align: center;
+  width: 106px;
+  /* padding: 0px 10px; */
+  margin: 0 auto;
+  height: 32px;
+  margin-top: 30px;
+
+  input {
+    display: inline;
+    width: 10px;
+    margin-right: -3px !important;
+    padding: 0px;
+    text-align: center;
+    color: #E42229;
+    font-size: 20px;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+
+  input::placeholder {
+    color: $app-color1;
+    opacity: 0.4;
+    font-size: 20px;
+    margin: auto 0;
+    vertical-align: middle;
+    @extend .lato-regular; // color: black;
+  }
+}
+
+
+//create account
+.createacc-msg {
+  padding: 0px 48px 24px !important;
+}
+
+
+
+
+// background: $app-color1;
+.continue-btn {
+  margin: 25px auto;
+  width: 85%;
+
+  button {
+    background: $app-color1;
+    color: white;
+    @extend .lato-bold;
+  }
+
+  .button.active,
+  .button.activated {
+    background: $app-color1;
+    color: white;
+  }
+}
+
+//footer class
+.login-btn {
+
+  background: $app-color1 !important;
+
+  button {
+    margin: 0 auto;
+    color: white;
+    @extend .lato-bold;
+    font-size: 16px;
+  }
+}

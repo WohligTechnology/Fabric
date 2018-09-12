@@ -49,6 +49,12 @@ var myApp = angular.module('starter', ['ionic', 'starter.services'])
         controller: 'SignupCtrl'
       })
 
+      .state('add-information', {
+        url: '/add-information',
+        templateUrl: 'templates/login-signup/add-information.html',
+        controller: 'AddInformationCtrl'
+      })
+
       .state('tab', {
         url: '/tab',
         abstract: true,

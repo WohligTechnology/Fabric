@@ -69,9 +69,26 @@ $lato: "lato" !default;
   font-weight: 700;
 }
 
+input,
+span,
+label {
+  font-size: 16px;
+}
 
 .app-color {
   color: $app-color;
+}
+
+.app-color1 {
+  color: $app-color1;
+}
+
+.fnt-15 {
+  font-size: 15px;
+}
+
+.fnt-12 {
+  font-size: 12px;
 }
 
 .mt-60 {
@@ -82,10 +99,8 @@ $lato: "lato" !default;
   margin-bottom: 15px;
 }
 
-input,
-span,
-label {
-  font-size: 16px;
+.inline {
+  display: inline !important;
 }
 
 @import "login-signup";

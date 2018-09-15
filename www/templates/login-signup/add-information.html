@@ -47,6 +47,40 @@
           <span class="input-label lato-bold">Street Name</span>
           <textarea name="" id="" id="" cols="4" rows="6" placeholder="Calfornia"></textarea>
         </label>
+        <div class="row login-form mt-10">
+          <div class="col  state-city-dropDown">
+            <div class="pb-5 lato-bold app-color fnt-16">
+              State
+            </div>
+            <div class="list item item-input item-select state-city-div">
+              <select ng-model="cart.warehouse" required>
+                <option value="">Roseville</option>
+                <option ng-repeat="warehouse in wareHouses" value="{{warehouse}}">{{warehouse.name}}</option>
+                <!-- <option>Green</option>
+              <option>Red</option> -->
+              </select>
+            </div>
+            <span class="errorMsg" ng-show="warehouseValid">Please select the Warehouse</span>
+          </div>
+          <div class="col  state-city-dropDown">
+            <div class="pb-5 lato-bold app-color fnt-16">
+              City
+            </div>
+            <div class="list item item-input item-select state-city-div">
+              <select ng-model="cart.warehouse" required>
+                <option value=""></option>
+                <option ng-repeat="warehouse in wareHouses" value="{{warehouse}}">{{warehouse.name}}</option>
+                <!-- <option>Green</option>
+                <option>Red</option> -->
+              </select>
+            </div>
+            <span class="errorMsg" ng-show="warehouseValid">Please select the Warehouse</span>
+          </div>
+        </div>
+        <label class="login-form item-input item-stacked-label">
+          <span class="input-label lato-bold">Country</span>
+          <input type="text" placeholder="497 Evergreen Rd.">
+        </label>
         <!-- <h5 class="gsdt-addr">Registered GST Address</h5> -->
         <div class="continue-btn">
           <button class="button button-block ">

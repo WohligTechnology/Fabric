@@ -83,12 +83,20 @@ label {
   color: $app-color1;
 }
 
+.white {
+  color: $light;
+}
+
 .fnt-15 {
   font-size: 15px;
 }
 
 .fnt-12 {
   font-size: 12px;
+}
+
+.fnt-16 {
+  font-size: 16px;
 }
 
 .mt-60 {
@@ -103,4 +111,44 @@ label {
   display: inline !important;
 }
 
+.martb10 {
+  margin: 10px 0px !important;
+}
+
+.marrl10 {
+  margin: 0px 10px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-56 {
+  margin-top: 56px;
+}
+
+.header-title {
+  .bar-header {
+    background: $app-color;
+  }
+
+  .bar .title {
+    font-size: 20px;
+    left: 0px;
+  }
+
+  .bar .title.title-left {
+    text-align: center;
+  }
+}
+
+.rel {
+  position: relative;
+}
+
 @import "login-signup";
+@import "category";

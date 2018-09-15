@@ -165,6 +165,209 @@
   max-width: none;
 }
 
+.state-city-div {
+  padding: 8px;
+  background: #FAFAFA;
+  border: 1px solid $app-color !important;
+
+  input {
+    color: #494949;
+    height: 24px; // height: 30px !important;
+    padding: 0px 15px 0 0 !important;
+    border: none;
+    background: #FAFAFA;
+    color: #494949;
+    direction: ltr !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 5px;
+    border-radius: 0px !important;
+    border: none;
+    @extend .lato-medium;
+  }
+
+  input::placeholder {
+    color: #494949;
+    font-size: 12px;
+    background: #FAFAFA;
+    @extend .lato-medium;
+  }
+}
+
+.state-city-dropDown {
+  .item-select {
+    padding: 15px 0px;
+    margin-bottom: 0px;
+    border: none;
+  }
+
+  .item-select select {
+    width: 100% !important;
+    max-width: 100% !important;
+    direction: ltr;
+    padding: 0 24px 0 16px;
+    color: $app-color;
+    @extend .lato-medium;
+  }
+
+  .item-select:after {
+    right: 11px;
+    color: $app-color;
+  }
+}
+
+//subscription css
+.sub-price {
+  text-align: center;
+  font-size: 40px;
+  color: $app-color;
+  @extend .lato-bold;
+}
+
+.buynow-btn {
+  margin: 48px auto 22px;
+  width: 162px;
+  height: 40px;
+
+  button {
+    height: 40px;
+    margin-bottom: 22px;
+    background: $app-color1;
+    color: $light !important;
+    @extend .lato-bold;
+  }
+
+  .button.active,
+  .button.activated {
+    background: $app-color1;
+    color: white;
+  }
+}
+
+
+
+.trial-btn {
+  border: 2px solid $app-color1;
+  width: 162px;
+  height: 44px;
+  margin: 0px auto;
+  border-radius: 5px;
+
+  button {
+    height: 40px;
+    min-height: 40px;
+    margin: 0px !important;
+    color: $app-color1 !important;
+    @extend .lato-bold;
+    line-height: 36px;
+  }
+
+  .button.active,
+  .button.activated {
+    background: $light;
+  }
+}
+
+//buyer-seller
+.select-checkbox {
+  margin: 20px 15px;
+
+  .item-checkbox {
+    background: $app-color;
+    border-radius: 10px;
+  }
+
+  .checkbox.checkbox-input-hidden input {
+    width: 24px;
+    height: 24px;
+    top: 2px;
+  }
+
+  .checkbox input:checked:before,
+  .checkbox input:checked+.checkbox-icon:before {
+    border-radius: 5px;
+    background: transparent;
+  }
+
+  .checkbox input:before,
+  .checkbox-icon:before {
+    width: 24px;
+    height: 24px;
+    border: 2px solid $light !important;
+    border-radius: 5px;
+    background: transparent;
+  }
+
+  .checkbox input:after,
+  .checkbox-icon:after {
+    -webkit-transition: opacity 0.05s ease-in-out;
+    transition: opacity 0.05s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    display: table;
+    width: 14px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    content: ' ';
+    opacity: 0;
+  }
+
+  .item-content {
+    height: 24px;
+    line-height: 18px;
+  }
+
+  span {
+    color: $light !important;
+    font-size: 20px;
+    @extend .lato-medium;
+  }
+}
+
+.seller-buyer-btn {
+  margin: 106px auto;
+  width: 173px;
+  height: 51px;
+
+  button {
+    height: 51px;
+    min-height: 51px;
+    margin-bottom: 22px;
+    background: $app-color1;
+    color: $light !important;
+    @extend .lato-bold;
+  }
+
+  .button.active,
+  .button.activated {
+    background: $app-color1;
+    color: $light;
+  }
+}
+
+//seller-type css
+.seller-type-text {
+  margin: 11px 7px;
+  color: $light;
+  background: $app-color1;
+  padding: 10px 20px;
+  @extend .lato-medium;
+  font-size: 16px;
+}
+
+.seller-type-access {
+  background: $app-color;
+}
+
+.seller-type-btn {
+  margin: 79px auto;
+}
+
 //footer class
 .login-btn {
 

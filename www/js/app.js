@@ -55,6 +55,33 @@ var myApp = angular.module('starter', ['ionic', 'starter.services'])
         controller: 'AddInformationCtrl'
       })
 
+      .state('subscription', {
+        url: '/subscription',
+        templateUrl: 'templates/login-signup/subscription.html',
+        controller: 'SubscriptionCtrl'
+      })
+
+      .state('select-seller', {
+        url: '/select-seller',
+        templateUrl: 'templates/login-signup/select-seller.html',
+        controller: 'SelectSellerCtrl'
+      })
+
+      .state('category', {
+        url: '/category',
+        templateUrl: 'templates/category/category.html',
+        controller: 'CategoryCtrl'
+      })
+      .state('inner-category', {
+        url: '/inner-category',
+        templateUrl: 'templates/category/inner-category.html',
+        controller: 'InnerCategoryCtrl'
+      })
+      .state('accessory', {
+        url: '/accessory',
+        templateUrl: 'templates/accessories/accessory.html',
+        controller: 'AccessoryCtrl'
+      })
       .state('tab', {
         url: '/tab',
         abstract: true,

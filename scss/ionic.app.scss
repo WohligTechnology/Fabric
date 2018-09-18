@@ -107,6 +107,10 @@ label {
   margin-bottom: 15px;
 }
 
+.mar-l10 {
+  margin-left: 10px;
+}
+
 .inline {
   display: inline !important;
 }
@@ -127,8 +131,16 @@ label {
   margin-top: 10px;
 }
 
+.mtb-10 {
+  margin: 10px 0px;
+}
+
 .mt-56 {
   margin-top: 56px;
+}
+
+.padlr10 {
+  padding: 0px 10px;
 }
 
 .header-title {
@@ -150,5 +162,48 @@ label {
   position: relative;
 }
 
+.has-header-bar {
+  top: 75px !important;
+}
+
+.tabs-top>.tabs,
+.tabs.tabs-top {
+  bottom: 0px !important;
+  top: initial !important;
+}
+
+.pane[hide-nav-bar="true"] .has-tabs-top {
+  top: 0px;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active,
+ion-tabs.tabs-color-active-positive .tab-item.active,
+ion-tabs.tabs-color-active-positive .tab-item.activated {
+  background: $app-color
+}
+
+.tab-item .icon {
+  height: 28px;
+  font-size: 28px;
+}
+
+.tabs {
+  span {
+    font-size: 12px;
+    color: white;
+  }
+}
+
+.tabs-icon-top>.tabs .tab-item,
+.tabs-icon-top.tabs .tab-item,
+.tabs-icon-bottom>.tabs .tab-item,
+.tabs-icon-bottom.tabs .tab-item {
+  font-size: 14px;
+}
+
+
+
+
 @import "login-signup";
 @import "category";
+@import "myshop";

@@ -9878,11 +9878,11 @@ a.button {
   src: url("../lib/fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-weight: 700; }
 
-.lato-regular, .login-form input, .login-form textarea, .login-form textarea::placeholder, .login-form input::placeholder, .forgot-pass-username, .dont-acc label, .otp-msg, .otp-input input::placeholder {
+.lato-regular, .login-form input, .login-form textarea, .login-form textarea::placeholder, .login-form input::placeholder, .forgot-pass-username, .dont-acc label, .otp-msg, .otp-input input::placeholder, .shirt-types .count, .add-product-div div, .see-all, .all, .sort-modal label {
   font-family: "lato";
   font-weight: 400; }
 
-.lato-medium, .state-city-div input, .state-city-div input::placeholder, .state-city-dropDown .item-select select, .select-checkbox span, .seller-type-text, .category-head {
+.lato-medium, .state-city-div input, .state-city-div input::placeholder, .state-city-dropDown .item-select select, .select-checkbox span, .seller-type-text, .category-head, .design-no {
   font-family: "lato";
   font-weight: 500; }
 
@@ -9890,7 +9890,7 @@ a.button {
   font-family: "lato";
   font-weight: 600; }
 
-.lato-bold, .dont-acc span, .continue-btn button, .sub-price, .buynow-btn button, .trial-btn button, .seller-buyer-btn button, .login-btn button, .explore-btn button, .category-name {
+.lato-bold, .dont-acc span, .continue-btn button, .sub-price, .buynow-btn button, .trial-btn button, .seller-buyer-btn button, .login-btn button, .explore-btn button, .category-name, .shirt-types .shirt-list, .shirt-design-name {
   font-family: "lato";
   font-weight: 700; }
 
@@ -9923,6 +9923,9 @@ label {
 .mb-15 {
   margin-bottom: 15px; }
 
+.mar-l10 {
+  margin-left: 10px; }
+
 .inline {
   display: inline !important; }
 
@@ -9938,8 +9941,14 @@ label {
 .mt-10 {
   margin-top: 10px; }
 
+.mtb-10 {
+  margin: 10px 0px; }
+
 .mt-56 {
   margin-top: 56px; }
+
+.padlr10 {
+  padding: 0px 10px; }
 
 .header-title .bar-header {
   background: #22386C; }
@@ -9953,6 +9962,34 @@ label {
 
 .rel {
   position: relative; }
+
+.has-header-bar {
+  top: 75px !important; }
+
+.tabs-top > .tabs,
+.tabs.tabs-top {
+  bottom: 0px !important;
+  top: initial !important; }
+
+.pane[hide-nav-bar="true"] .has-tabs-top {
+  top: 0px; }
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+  background: #22386C; }
+
+.tab-item .icon {
+  height: 28px;
+  font-size: 28px; }
+
+.tabs span {
+  font-size: 12px;
+  color: white; }
+
+.tabs-icon-top > .tabs .tab-item,
+.tabs-icon-top.tabs .tab-item,
+.tabs-icon-bottom > .tabs .tab-item,
+.tabs-icon-bottom.tabs .tab-item {
+  font-size: 14px; }
 
 .app-logo {
   width: 40%;
@@ -10224,7 +10261,7 @@ label {
   color: #22386C; }
 
 .category-img {
-  height: 75%;
+  height: 150px;
   overflow: hidden;
   margin: 0 auto;
   width: 90%;
@@ -10234,7 +10271,7 @@ label {
     height: 100%; }
 
 .explore-btn {
-  padding: 20pxpx 0px 40px 0px;
+  padding: 20px 0px 40px 0px;
   width: 98px;
   height: 51px;
   margin: 0px auto;
@@ -10251,3 +10288,137 @@ label {
   font-size: 14px;
   left: 5px;
   color: white; }
+
+.search-input {
+  padding: 10px 0px 20px;
+  height: 75px; }
+  .search-input label {
+    border-radius: 0px;
+    background: #192A51; }
+  .search-input input {
+    width: 100%;
+    height: 40px;
+    background: #192A51;
+    color: white; }
+
+.supplier-profile .item-thumbnail-right,
+.supplier-profile .item-thumbnail-right .item-content {
+  padding-left: 20px; }
+
+.supplier-profile .item-thumbnail-right > img:first-child,
+.supplier-profile .item-thumbnail-right .item-image,
+.supplier-profile .item-thumbnail-right .item-content > img:first-child,
+.supplier-profile .item-thumbnail-right .item-content .item-image {
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 5px;
+  border: 1px solid #22386C;
+  right: 20px; }
+
+.supplier-profile .item {
+  border-color: transparent;
+  border: none; }
+
+.post-product {
+  margin: 20px auto;
+  width: 50%; }
+  .post-product button {
+    background: #E42229;
+    color: white; }
+  .post-product .button.active,
+  .post-product .button.activated {
+    background: #E42229;
+    color: white; }
+
+.shirt-types .custom-bullet {
+  width: 10px;
+  height: 10px;
+  background: #2B2A29;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: -2px;
+  vertical-align: middle; }
+
+.shirt-types .shirt-list {
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 0px;
+  color: #2B2A29; }
+
+.shirt-types .count {
+  color: #2B2A29; }
+
+.shirt-design-name {
+  padding-left: 5px;
+  color: #22386C;
+  font-size: 14px; }
+
+.design-no {
+  padding-left: 5px;
+  color: #E42229;
+  font-size: 14px; }
+
+.add-product-div {
+  border: 1px dashed #2B2A29; }
+  .add-product-div i {
+    padding-top: 10px;
+    font-size: 40px; }
+  .add-product-div div {
+    padding-top: 5px;
+    color: #2B2A29;
+    opacity: 0.5; }
+
+.see-all {
+  padding-right: 10px;
+  float: right;
+  margin-top: -30px;
+  color: #E42229; }
+
+.all {
+  text-align: right;
+  margin: 10px 17px;
+  color: #22386C; }
+
+.modal-bg .modal-backdrop,
+.modal-bg .modal-backdrop-bg {
+  bottom: 0px !important;
+  top: initial !important;
+  height: 50%; }
+
+.modal-bg .bar .title {
+  line-height: 60px;
+  color: white;
+  font-size: 18px; }
+
+.modal-bg .bar-header {
+  height: 60px;
+  background: #22386C; }
+  .modal-bg .bar-header button {
+    border: none;
+    background: #22386C;
+    line-height: 13px;
+    font-size: 22px; }
+
+.sort-products {
+  font-size: 25px;
+  color: white; }
+
+.sort-modal {
+  margin: 10px 25px; }
+  .sort-modal div {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    background: #2B2A29;
+    display: inline-block;
+    line-height: -2px;
+    vertical-align: middle; }
+  .sort-modal .custom-bullet1 {
+    background: #959494; }
+  .sort-modal .shirt-list1 {
+    color: #959494; }
+  .sort-modal label {
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 0px;
+    color: #2B2A29; }

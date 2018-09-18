@@ -60,7 +60,11 @@ var myApp = angular.module('starter', ['ionic', 'starter.services'])
         templateUrl: 'templates/login-signup/subscription.html',
         controller: 'SubscriptionCtrl'
       })
-
+      .state('buyer-seller', {
+        url: '/buyer-seller',
+        templateUrl: 'templates/login-signup/seller-buyer-select.html',
+        controller: 'SellerBuyerCtrl'
+      })
       .state('select-seller', {
         url: '/select-seller',
         templateUrl: 'templates/login-signup/select-seller.html',
@@ -82,6 +86,26 @@ var myApp = angular.module('starter', ['ionic', 'starter.services'])
         templateUrl: 'templates/accessories/accessory.html',
         controller: 'AccessoryCtrl'
       })
+      .state('tab.myshop', {
+        url: '/myshop',
+        views: {
+          'tab-myshop': {
+            templateUrl: 'templates/myshop/myshop.html',
+            controller: 'MyShopCtrl'
+          }
+        }
+      })
+
+      .state('tab.inner-shop', {
+        url: '/inner-shop',
+        views: {
+          'tab-myshop': {
+            templateUrl: 'templates/myshop/inner-shop.html',
+            controller: 'InnerShopCtrl'
+          }
+        }
+      })
+
       .state('tab', {
         url: '/tab',
         abstract: true,

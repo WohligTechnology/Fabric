@@ -1,0 +1,140 @@
+<ion-view hide-nav-bar="true">
+  <ion-header-bar>
+    <div class="header-title">
+      <div class="bar bar-header ">
+        <button class="button button-icon icon ion-arrow-left-c white"></button>
+        <h1 class="title white ">Add New Product</h1>
+      </div>
+    </div>
+
+  </ion-header-bar>
+  <ion-content class="has-header">
+    <div class="row">
+      <div class="col">
+        <div class="upload-photos">
+          <button class="button button-block icon-left  ion-upload">
+            Upload Photos
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="open-camera">
+          <button class="button button-block icon-left ion-camera">
+            Open camera
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bor-bot">
+        <div class="mar-10 ">
+          <div class="row">
+            <div class="col">
+              <div class="upload-img">
+                <img ng-src="img/shirt/shirt1.jpg" alt="">
+              </div>
+            </div>
+            <div class="col">
+              <div class="upload-img">
+                <img ng-src="img/shirt/shirt1.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="upload-img rel">
+                <img ng-src="img/shirt/shirt1.jpg" alt="">
+                <div class="extra-photo">
+                  <span>+</span>
+                  <label for="">1</label>
+                  <div>
+                    Photo
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mar-20">
+        <div class="list add-product-form ">
+          <label class=" item-input">
+            <span class="input-label">Accessories:</span>
+            <input type="text" placeholder="Add Name">
+          </label>
+          <label class=" item-input">
+            <span class="input-label">Category:</span>
+            <div class="add-new-product-dropDown">
+              <div class="list item item-input item-select add-new-product-div">
+                <select required selected>
+                  <option value="Select Category">Select Category</option>
+                </select>
+              </div>
+            </div>
+          </label>
+          <label class=" item-input">
+            <span class="input-label">Sub-Category:</span>
+            <div class="add-new-product-dropDown">
+              <div class="list item item-input item-select add-new-product-div">
+                <select required selected>
+                  <option value="">Sub-Category</option>
+                </select>
+              </div>
+            </div>
+          </label>
+          <label class=" item-input">
+            <span class="input-label">Design No:</span>
+            <input type="text" placeholder="Add Manual Design">
+          </label>
+          <label class=" item-input">
+            <span class="input-label">Quality type:</span>
+            <input type="text" placeholder="Add Type of Quality">
+          </label>
+          <label class=" item-input">
+            <span class="input-label">Rate-Amount:</span>
+            <input type="text" placeholder="Add Amount">
+          </label>
+          <span class="id-blank">*id blank rate negotiable</span>
+
+          <label class=" item-input">
+            <span class="input-label">Sub-Category:</span>
+            <div class="add-new-product-dropDown">
+              <div class="list item item-input item-select add-new-product-div">
+                <select required selected>
+                  <option value="">Add Unit</option>
+                </select>
+              </div>
+            </div>
+          </label>
+
+          <label class=" item-input">
+            <span class="input-label">Width/size:</span>
+            <input type="text" placeholder="Add Size">
+          </label>
+          <label class=" item-input">
+            <span class="input-label">Minimum Order:</span>
+            <input type="text" placeholder="Add Minimum Order">
+          </label>
+          <label class=" item-input">
+            <span class="input-label">Description:</span>
+            <input type="text" placeholder="Add Description">
+          </label>
+          <div class="offer-checkbox">
+            <ion-checkbox>Offer</ion-checkbox>
+          </div>
+          <label class=" item-input pad0">
+            <span class="input-label text-left">New Rate:</span>
+            <input type="text" placeholder="Add New Rate">
+          </label>
+          <div class="post-your-prod">
+            <button class="button button-block ">
+              Post your product
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

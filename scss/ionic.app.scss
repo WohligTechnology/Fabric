@@ -131,6 +131,10 @@ label {
   margin-top: 10px;
 }
 
+.mar-10 {
+  margin: 10px;
+}
+
 .mtb-10 {
   margin: 10px 0px;
 }
@@ -202,8 +206,28 @@ ion-tabs.tabs-color-active-positive .tab-item.activated {
 }
 
 
+.bor-bot {
+  border-bottom: 1px solid #CECECE;
+}
 
+.mar-20 {
+  margin: 20px;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.mar0 {
+  margin: 0px;
+}
+
+.mar-auto0 {
+  margin: auto 0;
+}
 
 @import "login-signup";
 @import "category";
 @import "myshop";
+@import "add-new-product";
+@import "product-details"

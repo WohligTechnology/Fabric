@@ -53,11 +53,8 @@
               State
             </div>
             <div class="list item item-input item-select state-city-div">
-              <select ng-model="cart.warehouse" required>
+              <select required>
                 <option value="">Roseville</option>
-                <option ng-repeat="warehouse in wareHouses" value="{{warehouse}}">{{warehouse.name}}</option>
-                <!-- <option>Green</option>
-              <option>Red</option> -->
               </select>
             </div>
             <span class="errorMsg" ng-show="warehouseValid">Please select the Warehouse</span>

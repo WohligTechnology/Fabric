@@ -1,0 +1,235 @@
+.upload-photos {
+
+  button {
+    background: $app-color;
+    color: white;
+    font-size: 16px;
+    @extend .lato-regular;
+  }
+
+  .button.active,
+  .button.activated {
+    background: $app-color1;
+    color: white;
+  }
+}
+
+.open-camera {
+
+  button {
+    color: $app-color1;
+    font-size: 16px;
+    border: 1px solid $app-color1;
+    @extend .lato-regular;
+  }
+
+  .button.active,
+  .button.activated {
+    background: $app-color1;
+    color: white;
+  }
+}
+
+.upload-img {
+  height: 85px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .extra-photo {
+    position: absolute;
+    bottom: 2%;
+    color: white;
+    @extend .lato-bold;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+      @extend .lato-bold;
+    }
+
+    label {
+      @extend .lato-bold;
+    }
+  }
+}
+
+.add-product-form {
+  span {
+    text-align: right;
+    @extend .lato-regular;
+    font-size: 15px;
+  }
+
+  .input-label {
+    padding: 7px 7px 7px 0px !important;
+  }
+
+  input {
+    padding: 0px 0px 0px 15px;
+    border-bottom: 1px solid $app-color;
+    color: $app-color;
+    @extend .lato-regular
+  }
+
+  input::placeholder {
+    color: #2B2A29;
+    opacity: 0.4;
+    @extend .lato-regular
+  }
+}
+
+.add-new-product-dropDown {
+  width: 65%;
+
+  .item-select {
+    padding: 15px 0px;
+    margin-bottom: 0px;
+    border: none;
+  }
+
+  .item-select select {
+    width: 100% !important;
+    max-width: 100% !important;
+    direction: ltr;
+    padding: 0 24px 0 14px;
+    color: $app-color;
+    @extend .lato-medium;
+  }
+
+  .item-select:after {
+    right: 11px;
+    color: $app-color;
+  }
+}
+
+.add-new-product-div {
+  padding: 8px;
+  background: #FAFAFA;
+  border-bottom: 1px solid $app-color !important;
+
+  input {
+    color: #494949;
+    height: 24px; // height: 30px !important;
+    padding: 0px 15px 0 0 !important;
+    border: none;
+    background: #FAFAFA;
+    color: #494949;
+    direction: ltr !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 5px;
+    border-radius: 0px !important;
+    border: none;
+    @extend .lato-medium;
+  }
+
+  input::placeholder {
+    color: #494949;
+    font-size: 12px;
+    background: #FAFAFA;
+    @extend .lato-medium;
+  }
+}
+
+.id-blank {
+  margin-left: 36%;
+  font-size: 12px !important;
+  color: $app-color;
+}
+
+.offer-checkbox {
+  margin: 10px 0px;
+  border: none;
+
+  .item-checkbox {
+    border: none;
+  }
+
+  .checkbox.checkbox-input-hidden input {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+  }
+
+  .checkbox input,
+  .checkbox-icon {
+    background: $app-color;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .checkbox input:checked:before,
+  .checkbox input:checked+.checkbox-icon:before {
+    border-radius: 5px;
+    background: $app-color;
+  }
+
+  .checkbox input:before,
+  .checkbox-icon:before {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+  }
+
+  .checkbox input:after,
+  .checkbox-icon:after {
+    -webkit-transition: opacity 0.05s ease-in-out;
+    transition: opacity 0.05s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 26%;
+    left: 22%;
+    display: table;
+    width: 13px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    content: ' ';
+    opacity: 0;
+  }
+
+  .item-content {
+    height: 20px;
+    line-height: 10px;
+  }
+
+  span {
+    color: #2F2E2D !important;
+    font-size: 16px;
+    @extend .lato-medium;
+  }
+}
+
+.pad0 {
+  padding: 0px !important;
+}
+
+.post-your-prod {
+  margin: 20px auto;
+  width: 90%;
+
+  button {
+    background: #E42229;
+    color: white;
+    font-size: 12px;
+  }
+
+  .button.active,
+  .button.activated {
+    background: $app-color1;
+    color: white;
+  }
+
+}

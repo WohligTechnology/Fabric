@@ -84,6 +84,7 @@
   padding-left: 5px;
   color: $app-color;
   font-size: 14px;
+  padding-right: 30px;
   @extend .lato-bold;
 }
 
@@ -91,6 +92,7 @@
   padding-left: 5px;
   color: $app-color1;
   font-size: 14px;
+  padding-right: 30px;
   @extend .lato-medium;
 }
 
@@ -190,4 +192,11 @@
     color: #2B2A29;
     @extend .lato-regular;
   }
+}
+
+.shirt-options {
+  position: absolute;
+  right: 10%;
+  bottom: 40%;
+  font-size: 18px;
 }

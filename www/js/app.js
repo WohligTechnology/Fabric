@@ -86,6 +86,12 @@ var myApp = angular.module('starter', ['ionic', 'starter.services'])
         templateUrl: 'templates/accessories/accessory.html',
         controller: 'AccessoryCtrl'
       })
+      .state('product-detail', {
+        url: '/product-detail',
+        templateUrl: 'templates/product-detail/product-detail.html',
+        controller: 'ProductDetailCtrl'
+      })
+
       .state('tab.myshop', {
         url: '/myshop',
         views: {
@@ -105,7 +111,11 @@ var myApp = angular.module('starter', ['ionic', 'starter.services'])
           }
         }
       })
-
+      .state('add-new-product', {
+        url: '/add-new-product',
+        templateUrl: 'templates/add-new-product/add-new-product.html',
+        controller: 'AddNewProductCtrl'
+      })
       .state('tab', {
         url: '/tab',
         abstract: true,

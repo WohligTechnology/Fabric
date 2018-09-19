@@ -1,0 +1,48 @@
+.product-name {
+  h4 {
+    color: $app-color;
+    @extend .lato-medium;
+  }
+
+  label {
+    color: #302F2E;
+    @extend .lato-regular;
+    font-size: 14px;
+  }
+
+  span {
+    color: #302F2E;
+    @extend .lato-regular;
+    font-size: 14px;
+  }
+}
+
+.product-name-settings {
+  font-size: 25px;
+  color: $app-color1;
+}
+
+.slider-div {
+  margin: 10px;
+  height: 425px !important;
+
+  .slider-image {
+    height: 395px;
+  }
+
+  .swiper-slide img {
+    width: 100% !important;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination {
+    left: 44%;
+  }
+
+  .swiper-pagination-bullet {
+    background: $app-color;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+  }
+}
